@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne Hotel - Facilities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 300px; /* Ensures all images have the same width */
+            height: auto;
+            cursor: pointer;
+        }
+        /* Lightbox overlay style */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .lightbox:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <h1>Our Facilities</h1>
+    </header>
+    <section>
+        <h2>Facilities Offered</h2>
+        <ul>
+            <li>Spa and Wellness Center</li>
+            <li>Swimming Pool</li>
+            <li>Fitness Center</li>
+            <li>Gourmet Restaurant</li>
+        </ul>
+        <h3>Gallery</h3>
+        <div class="gallery">
+            <a href="#img1"><img src="D:\Wayne Hotel\OIP (1).jpeg" alt="Facility Image 1"></a>
+            <a href="#img2"><img src="D:\Wayne Hotel\OIP.jpeg" alt="Facility Image 2"></a>
+            <a href="#img3"><img src="D:\Wayne Hotel\R (1).jpeg" alt="Facility Image 3"></a>
+            <a href="#img4"><img src="D:\Wayne Hotel\R.jpeg" alt="Facility Image 4"></a>
+        </div>
+        <!-- Lightbox containers -->
+        <div id="img1" class="lightbox">
+            <a href="#"><img src="D:\Wayne Hotel\OIP (1).jpeg" alt="Facility Image 1"></a>
+        </div>
+        <div id="img2" class="lightbox">
+            <a href="#"><img src="D:\Wayne Hotel\OIP.jpeg" alt="Facility Image 2"></a>
+        </div>
+        <div id="img3" class="lightbox">
+            <a href="#"><img src="D:\Wayne Hotel\R (1).jpeg" alt="Facility Image 3"></a>
+        </div>
+        <div id="img4" class="lightbox">
+            <a href="#"><img src="D:\Wayne Hotel\R.jpeg" alt="Facility Image 4"></a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Wayne Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
